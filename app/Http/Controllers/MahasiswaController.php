@@ -86,8 +86,7 @@ class MahasiswaController extends Controller
 
     public function destroy(Request $request){
         $nama = $request->name;
-        // SweetAlert::message('Berhasil! Data mahasiswa '.$nama.' berhasil dihapus.');
-        // alert()->success('Data mahasiswa '.$nama.' berasil dihapus.');
+        
         return redirect('/mahasiswa')->with('success', 'Data berhasil dihapus');
     }
 }

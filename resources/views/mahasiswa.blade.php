@@ -5,7 +5,7 @@
     <?php
     
     alert()->success('Data terhapus!');
-    // <div class="alert alert-dark" role="alert">{{ $message }}</div>
+    
     ?>
     @elseif($message = Session::get('error'))
     <h1 style="color: red">{{ $message }}</h1>
